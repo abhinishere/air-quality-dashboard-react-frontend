@@ -1,0 +1,199 @@
+@import "../abstracts/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// light theme
+.light {
+  .text {
+    color: $c-text1-light;
+  }
+  .sub-text {
+    color: $c-text2-light;
+  }
+  .link {
+    color: $c-primary-light;
+    :hover {
+      color: $c-text1-light;
+    }
+  }
+  .button {
+    background-color: $c-primary-light;
+    color: $c-surface1-light;
+    &:hover {
+      box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    }
+  }
+  .icon-container {
+    color: $c-text2-light;
+    background-color: $c-surface3-light;
+    &:hover {
+      color: $c-hover-light;
+    }
+  }
+  .background {
+    background-color: $c-surface1-light;
+  }
+
+  .sidebar-container {
+    background-color: $c-surface3-light;
+    .sidebar {
+      .item {
+        .nav-inactive-link {
+          color: $c-text2-light;
+          &:hover {
+            color: $c-text1-light;
+            .iconContainer {
+              background-color: $c-hover-light;
+            }
+          }
+        }
+        .nav-active-link {
+          color: $c-text1-light;
+          .iconContainer {
+            background-color: $c-surface4-light;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    background-color: $c-surface2-light;
+    &:hover {
+      background-color: $c-surface4-light;
+      transition: background-color 0.2s linear;
+    }
+  }
+
+  .card-box-shadow {
+    box-shadow: 0 1px 3px 0 $c-border-light, 0 4px 8px 3px $c-border-light;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border: 1px solid $c-border-light;
+    color: $c-text1-light;
+
+    &:disabled {
+      background: $c-border-light;
+    }
+  }
+
+  .warning-text {
+    color: $c-warning-light;
+  }
+
+  .thin-border {
+    border: 1px solid $c-border-light;
+  }
+
+  .selected-option {
+    background-color: $c-surface4-light;
+  }
+
+  .unselected-option:hover {
+    background-color: $c-hover-light;
+  }
+}
+
+// dark theme
+.dark {
+  .text {
+    color: $c-text1-dark;
+  }
+  .sub-text {
+    color: $c-text2-dark;
+  }
+  .link {
+    color: $c-primary-dark;
+    :hover {
+      color: $c-text1-dark;
+    }
+  }
+  .button {
+    background-color: $c-primary-dark;
+    color: $c-surface1-dark;
+    &:hover {
+      box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    }
+  }
+  .icon-container {
+    color: $c-text2-dark;
+    background-color: $c-surface3-dark;
+    &:hover {
+      color: $c-hover-dark;
+    }
+  }
+  .background {
+    background-color: $c-surface1-dark;
+  }
+  .sidebar-container {
+    background-color: $c-surface3-dark;
+    .sidebar {
+      .item {
+        .nav-inactive-link {
+          color: $c-text2-dark;
+          &:hover {
+            color: $c-text1-dark;
+            .iconContainer {
+              background-color: $c-hover-dark;
+            }
+          }
+        }
+        .nav-active-link {
+          color: $c-text1-dark;
+          .iconContainer {
+            background-color: $c-surface4-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    background-color: $c-surface2-dark;
+    &:hover {
+      background-color: $c-surface4-dark;
+      transition: background-color 0.2s linear;
+    }
+  }
+
+  .card-box-shadow {
+    box-shadow: 0 1px 3px 0 $c-border-dark, 0 4px 8px 3px $c-border-dark;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border: 1px solid $c-border-dark;
+    color: $c-text1-dark;
+
+    &:disabled {
+      background: $c-border-dark;
+    }
+  }
+
+  .warning-text {
+    color: $c-warning-dark;
+  }
+
+  .thin-border {
+    border: 1px solid $c-border-dark;
+  }
+
+  .selected-option {
+    background-color: $c-surface4-dark;
+  }
+
+  .unselected-option:hover {
+    background-color: $c-hover-dark;
+  }
+}
+
+// .flex {
+//   display: flex;
+//   height: 100vh;
+// }

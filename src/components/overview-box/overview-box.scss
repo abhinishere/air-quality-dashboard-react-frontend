@@ -1,0 +1,33 @@
+@import "../../styles/abstracts/colors";
+
+.overview-box {
+  display: flex;
+  height: 100%;
+
+  .box-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.25rem;
+
+    .title {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .value {
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 0.75rem;
+    }
+  }
+
+  .chart-info {
+    flex: 2;
+    margin: 1.25rem 1.25rem 1.25rem 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+
+.readings-chart {
+  .chart-container {
+    .chart-wrapper {
+      border-radius: 20px;
+    }
+
+    .chart-info {
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 1.25rem;
+    }
+  }
+}

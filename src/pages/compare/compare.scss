@@ -1,0 +1,67 @@
+@import "../../styles/responsive.scss";
+
+.compare-page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .compare-box {
+    width: 75%;
+    @include lg {
+      width: 95%;
+    }
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .time-range-label {
+      display: flex;
+      gap: 10px;
+    }
+
+    .time-range-input {
+      height: 2.2rem;
+      background: transparent;
+      border-radius: 6px;
+      padding: 5px 10px;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+
+    .options {
+      margin-top: 5px;
+      display: flex;
+      gap: 10px;
+      .option {
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      // .unselected-option:hover {
+      //   background-color: $c-hover-light;
+      // }
+      // .selected-option {
+      //   background-color: $c-surface4-light;
+      // }
+    }
+  }
+
+  .loader {
+    margin: auto;
+  }
+
+  .simple-chart {
+    margin: auto;
+    width: 100%;
+  }
+}

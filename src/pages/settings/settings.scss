@@ -1,0 +1,29 @@
+@import "../../styles/responsive.scss";
+
+.settings-page {
+  .settings-card {
+    width: 75%;
+    @include lg {
+      width: 95%;
+    }
+    height: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    // box-shadow: 0 1px 3px 0 $c-border-light, 0 4px 8px 3px $c-border-light;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      font-weight: 500;
+    }
+
+    .options {
+      .option {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../styles/responsive.scss";
+
+.sidebar {
+  text-align: center;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 2px;
+    cursor: pointer;
+
+    .nav-inactive-link {
+      &:hover {
+        .iconContainer {
+          border-radius: 500px;
+          margin: 0px 10px;
+          .icon {
+            stroke-width: 3;
+            transition: stroke-width 0.5s ease-in;
+          }
+        }
+      }
+    }
+
+    .nav-active-link {
+      .iconContainer {
+        border-radius: 500px;
+        margin: 0px 10px;
+        &:hover {
+          .icon {
+            stroke-width: 3;
+            transition: stroke-width 0.5s ease-in;
+          }
+        }
+      }
+    }
+
+    .iconContainer {
+      padding: 5px;
+      .icon {
+        stroke-width: 2.5;
+      }
+    }
+    .text {
+      @include lg {
+        display: none;
+      }
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+      line-height: 16px;
+    }
+  }
+}
