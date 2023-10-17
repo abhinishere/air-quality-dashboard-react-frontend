@@ -92,7 +92,7 @@ export default function ReadingsImproved() {
           if (reuploadResponse.ok || reuploadResponse.status === 502) {
             // firebase rewrite only waits up to 60 seconds to get response from the server
             // may not fit the window for large files
-            toast.error("Upload successful!");
+            toast.success("Upload successful!");
             return;
           }
           toast.error("Upload failed.");
