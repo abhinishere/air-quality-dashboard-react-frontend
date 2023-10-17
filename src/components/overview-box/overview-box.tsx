@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./overview-box.scss";
 import ReactApexChart from "react-apexcharts";
 import { IReading } from "../../lib/data";
+import { ApexOptions } from "apexcharts";
+import { useSelector } from "react-redux";
 
 interface OverviewBoxProps {
   title: string;
@@ -14,6 +16,7 @@ export default function OverviewBox({
   data,
   dataKey,
 }: OverviewBoxProps) {
+  const darkMode = useSelector((state: any) => state.theme.darkMode);
   const [value, setValue] = useState<IReading | null>();
   useEffect(() => {
     if (data) {
@@ -34,9 +37,13 @@ export default function OverviewBox({
       data: (data! as any).map((a: any) => a[dataKey]),
     },
   ];
-  const options = {
+  const options: ApexOptions = {
+    theme: {
+      mode: darkMode ? "dark" : "light",
+    },
     chart: {
       id: "line-chart",
+      background: "0",
       animations: {
         enabled: true, // Disable animations
       },
